@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+ ! Excerpted from "Reactive Programming with RxJS",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material,
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose.
+ ! Visit http://www.pragmaticprogrammer.com/titles/smreactjs for more book information.
+-->
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="../rx.all-4.0.0.js"></script>
+    <script src="../rx.dom-7.0.3.js"></script>
+
+    <title>Earthquake map</title>
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .fade-value-0 {
+        opacity: 1;
+      }
+      .fade-value-1 {
+        opacity: .7;
+      }
+      .fade-value-2 {
+        opacity: .3;
+      }
+      /*.fade-value-3 {
+        opacity: .7;
+      }
+      .fade-value-4 {
+        opacity: .6;
+      }
+      .fade-value-5 {
+        opacity: .5;
+      }
+      .fade-value-6 {
+        opacity: .4;
+      }
+      .fade-value-7 {
+        opacity: .3;
+      }
+      .fade-value-8 {
+        opacity: .2;
+      }
+      .fade-value-9 {
+        opacity: .1;
+      }
+      .fade-value-10 {
+        opacity: 0;
+      }*/
+
+
+      #map { height: 100%; }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <script src="global.js"></script>
+    <script src="map.js"></script>
+    <script src="availability.js"></script>
+    <!-- <script src="code1_1.js"></script> -->
+  </body>
+</html>
