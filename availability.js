@@ -1,6 +1,6 @@
 const markers = [];
 const greenIcon = L.icon({
-  iconUrl: '../assets/img/RF-Spinner_no-bkg.gif',
+  iconUrl: 'assets/img/RF-Spinner_no-bkg.gif',
   iconSize: [20, 31],
 });
 
