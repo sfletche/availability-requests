@@ -12,7 +12,7 @@ const removeMarkers = function() {
 }
 
 const corsRequests = Rx.Observable
-  .interval(2000)
+  .interval(1000)
   .flatMap(function() {
     // console.log('ajax');
     return Rx.DOM.ajax({
@@ -31,17 +31,15 @@ const corsRequests = Rx.Observable
     return feature.metadata.status === 'success';
   })
   .filter(function(feature) {
-    return feature.age < 3;
+    return feature.age < 120;
   });
 
 corsRequests.subscribe(function(feature) {
   const { latitude, longitude } = feature.metadata.results[0];
   const { address, city, state, zip } = feature.metadata.results[0];
   const marker = L.marker([latitude, longitude], { icon: greenIcon});
-  // const marker = L.marker([latitude, longitude]);
-  // marker.bindPopup(`${address}</br>${city}, ${state} ${zip}`);
+  marker.setOpacity((120 - feature.age) / 120);
   marker.addTo(map);
-  L.DomUtil.addClass(marker._icon, `fade-value-${feature.age}`);
   markers.push(marker);
 });
 
