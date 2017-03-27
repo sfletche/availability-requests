@@ -19,3 +19,8 @@ Using Geoduck branch: `HACKDAY-visualize-availability-checks`
 * 201 Knights Ln, Santa Maria, CA 93454, USA
 * 4280 Faria Rd, Ventura, CA 93001, USA
 * 1418 F St, Sacramento, CA 95814
+
+**NOTE:**
+rx-dom v7.0.3 has a known bug that was manually patched in the first commit
+see the following for details
+https://github.com/Reactive-Extensions/RxJS-DOM/issues/117
