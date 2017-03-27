@@ -22,5 +22,8 @@ Using Geoduck branch: `HACKDAY-visualize-availability-checks`
 
 **NOTE:**
 rx-dom v7.0.3 has a known bug that was manually patched in the first commit
-see the following for details
+see the following for details:
 https://github.com/Reactive-Extensions/RxJS-DOM/issues/117
+
+created a new issue for the same problem:
+https://github.com/Reactive-Extensions/RxJS-DOM/issues/129
